@@ -3,9 +3,9 @@
     "providerOptions": {
         "accessKeyId": "AKIAIUGAEJCM5AX4VIBQ",
         "secretAccessKey": "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",
-        "region": "Asia Pacific (Mumbai)",
+        "region": "us-east-2",
         "params": {
-            "Bucket": "strapiimageproviderdemo"
+            "Bucket": "strapiimage"
         }
     }
 }
