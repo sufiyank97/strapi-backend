@@ -11,17 +11,16 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
-      "unique": false
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "text": {
+      "type": "biginteger"
     },
     "website": {
       "type": "string"
-    },
-    "phone": {
-      "type": "integer"
-    },
-    "text": {
-      "type": "integer"
     },
     "email": {
       "type": "email"
@@ -29,7 +28,7 @@
     "location": {
       "type": "string"
     },
-    "desc": {
+    "description": {
       "type": "text"
     },
     "image": {
@@ -40,6 +39,11 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social.social-links"
     }
   }
 }

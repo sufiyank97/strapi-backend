@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_social_social_links",
+  "info": {
+    "name": "socialLinks",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
