@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "podcasts",
+  "collectionName": "stays",
   "info": {
-    "name": "podcast"
+    "name": "stay"
   },
   "options": {
     "increments": true,
@@ -13,20 +13,20 @@
       "type": "string",
       "required": true
     },
-    "phone": {
-      "type": "biginteger"
-    },
-    "text": {
-      "type": "biginteger"
-    },
-    "website": {
-      "type": "string"
-    },
     "email": {
       "type": "email"
     },
     "location": {
       "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "text": {
+      "type": "biginteger"
     },
     "description": {
       "type": "text"
@@ -40,13 +40,13 @@
       "plugin": "upload",
       "required": false
     },
+    "audioUrl": {
+      "type": "string"
+    },
     "social": {
       "type": "component",
       "repeatable": true,
       "component": "social.social-links"
-    },
-    "audioUrl": {
-      "type": "string"
     }
   }
 }

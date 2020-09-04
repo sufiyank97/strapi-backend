@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "podcasts",
+  "collectionName": "guests",
   "info": {
-    "name": "podcast"
+    "name": "guest"
   },
   "options": {
     "increments": true,
@@ -12,21 +12,6 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "phone": {
-      "type": "biginteger"
-    },
-    "text": {
-      "type": "biginteger"
-    },
-    "website": {
-      "type": "string"
-    },
-    "email": {
-      "type": "email"
-    },
-    "location": {
-      "type": "string"
     },
     "description": {
       "type": "text"
@@ -39,11 +24,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "social": {
-      "type": "component",
-      "repeatable": true,
-      "component": "social.social-links"
     },
     "audioUrl": {
       "type": "string"
