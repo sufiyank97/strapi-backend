@@ -29,21 +29,24 @@ module.exports = {
 	lifecycles: {
  
   async beforeCreate(data) {
-	    if (data.name) {
-
-      const category1=await strapi.query('podcast').findOne({id:data.id},['category', 'category.name'])
+  	
+	    if (data.name && data.category) {
+	    	
+      const category1=await strapi.query('category').findOne({id:data.category})
       
-	    	const newData=`/${category1.category.name}/${slugify(data.name)}/`
+	    	const newData=`/${category1.name}/${slugify(data.name)}/`
 	      data.slug = newData;
+	    }else{
+	    	throw new Error('Enter category')
 	    }
     },
 
     async beforeUpdate(params,data) {
-     
-      const category1=await strapi.query('podcast').findOne({id:data.id},['category', 'category.name'])
+     console.log("before update")
+      const category1=await strapi.query('category').findOne({id:data.category})
      
 	    if (data.name) {
-	    	const newData=`/${category1.category.name}/${slugify(data.name)}/`
+	    	const newData=`/${category1.name}/${slugify(data.name)}/`
 	    	data.slug = newData;
 	    }
     }
