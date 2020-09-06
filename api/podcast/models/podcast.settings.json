@@ -47,6 +47,13 @@
     },
     "audioUrl": {
       "type": "string"
+    },
+    "category": {
+      "columnName": "name",
+      "model": "category"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
