@@ -22,7 +22,8 @@ module.exports = ({ env }) => ({
         // authenticationDatabase: env('AUTHENTICATION_DATABASE', ''),
         // ssl: env.bool('DATABASE_SSL', false),
         // ssl: `${process.env.DATABASE_SSL || false}`,
-        // useUnifiedTopology: env.bool('USE_UNIFIED_TOPOLOGY', false)
+        // useUnifiedTopology: env.bool('USE_UNIFIED_TOPOLOGY', true)
+        
         // useUnifiedTopology: `${process.env.USE_UNIFIED_TOPOLOGY || false}`,
         // authenticationDatabase: `${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}`
       },
