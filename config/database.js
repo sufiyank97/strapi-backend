@@ -9,13 +9,9 @@ module.exports = ({ env }) => ({
         // port: env.int('DATABASE_PORT', 27017),
         // username: env('DATABASE_USERNAME', ''),
         // password: env('DATABASE_PASSWORD', ''),
-        database: env('DATABASE_NAME', 'kiaOrana'),
-        uri: "mongodb://sufiyan1:QOYShj0AaXgWhAdU@cluster0-shard-00-00.zrsua.mongodb.net:27017,cluster0-shard-00-01.zrsua.mongodb.net:27017,cluster0-shard-00-02.zrsua.mongodb.net:27017/kiaOrana?ssl=true&replicaSet=atlas-2ewkwc-shard-0&authSource=admin&retryWrites=true&w=majority"
-
-        // database: env('DATABASE_NAME'),
-        // uri: env('DATABASE_URI')
-        // uri: `${env.DATABASE_URI}`,
-        // database: `${env.DATABASE_NAME}`
+        
+        database: env('DATABASE_NAME'),
+        uri: env('DATABASE_URI')
       },
       options: {
         ssl: true
